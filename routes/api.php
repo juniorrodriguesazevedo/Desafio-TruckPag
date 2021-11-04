@@ -9,5 +9,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('city', [CityController::class, 'index']);
+Route::get('cities', [CityController::class, 'index']);
 Route::apiResource('address', AddressController::class);
